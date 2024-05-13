@@ -70,11 +70,11 @@
 
   .advantages__item {
     display: flex;
+    flex-flow: wrap;
     padding-bottom: 37px;
     width: 245px;
     height: 280px;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 31px;
 
     &::before {
