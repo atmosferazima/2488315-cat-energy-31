@@ -63,6 +63,33 @@
     }
   }
 
+  &--powder {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-powder");
+      background-size: 25px 28px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--food {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-fork");
+      background-size: 25px 28px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--time {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-clock");
+      background-size: 25px 28px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
 }
 
 @media (min-width: $tablet-width) {
