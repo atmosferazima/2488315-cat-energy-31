@@ -7,6 +7,7 @@
   min-width: 280px;
 }
 
+
 @media (max-width: $mobile-width-only) {
   .nav__toggle {
     margin-left: auto;
@@ -103,5 +104,30 @@
 
   .nav__toggle {
     display: none;
+
+@media (min-width: $tablet-width) {
+  .nav__list {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.nav__item {
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+
+
+.nav__link {
+  @include link;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .nav__link {
+    padding-left: 33px;
+
   }
 }

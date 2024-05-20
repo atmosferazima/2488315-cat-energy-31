@@ -22,6 +22,7 @@
     content: "";
     display: block;
     min-width: 60px;
+
     height: 60px;
     background-color: $basic-color;
   }
@@ -61,6 +62,7 @@
       background-position: center;
     }
   }
+
 }
 
 @media (min-width: $tablet-width) {
@@ -108,5 +110,38 @@
     font-size: 16px;
     line-height: 24px;
     counter-reset: number;
+
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding: 25px 30px 0;
+  }
+
+  .advantages__item {
+    display: flex;
+    flex-flow: wrap;
+    padding-bottom: 37px;
+    width: 245px;
+    height: 280px;
+    flex-direction: column;
+    gap: 31px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 80px;
+      background-color: $basic-color;
+    }
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 668px;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
